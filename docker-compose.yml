@@ -8,7 +8,7 @@ services:
       - ./front:/app:cached
       - nuxt_node_modules:/app/node_modules
     ports:
-      - "80:3000"
+      - "8181:3000"
       - "24678:24678"
     tty: true
     environment:

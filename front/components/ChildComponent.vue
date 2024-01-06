@@ -7,12 +7,14 @@ const refMessage_1 = useRefMessage()
 const refMessage_2 = useRefMessage()
 const outRef_1 = useOuntRefMessage()
 const outRef_2 = useOuntRefMessage()
+
+console.log(message_1)
 </script>
 <template>
   <div>
     <p>[index.vue]{{ message }}</p>
     <p>[useMessage_1(useState)]{{ message_1.message }}</p>
-    <p>[useMessage_2(useState)]{{ message_2.message }}<span v-if="message_2.message.value">(setMessageはmessage_1で)</span></p>
+    <p>[useMessage_2(useState)]{{ message_2.message }}</p>
     <p>[useMessage(useState)分割代入]{{ message_3 }}</p>
     <p>[useRefMessage_1(ref)]{{ refMessage_1.message }}</p>
     <p>[useRefMessage_2(ref)]{{ refMessage_2.message }}</p>

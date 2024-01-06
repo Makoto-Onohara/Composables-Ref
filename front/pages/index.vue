@@ -1,6 +1,4 @@
 <script setup lang="ts">
-// import ChildComponent from '~/components/ChildComponent.vue';
-
 const message = ref("Hi!");
 const message_1 = useMessage();
 const message_2 = useMessage();
@@ -63,14 +61,14 @@ const reset = () => {
 </template>
 <style scoped lang="scss">
 .wrapper {
-  // max-width: 600px;
+  max-width: 800px;
   border: solid 10px;
   background-color: lightblue;
   padding: 20px;
   display: flex;
 
   .item {
-
+    width: 50%;
   }
 
   .title {
